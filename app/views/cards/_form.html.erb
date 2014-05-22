@@ -1,0 +1,21 @@
+<%= form_for(@card) do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<br>
+<%= f.label :num %>
+<%= f.text_field :num %>
+<br>
+<%= f.label :limit %>
+<%= f.text_field :limit %>
+<br>
+<%= f.label :sdate %>
+<%= f.date_field :sdate %>
+<br>
+<%= f.label :pddate %>
+<%= f.date_field :pddate %>
+<br>
+<%= f.label :remark %>
+<%= f.text_area :remark %>
+<br>
+<%= f.submit %>
+<% end %>

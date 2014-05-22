@@ -1,0 +1,14 @@
+<tr>
+<td><%= card.name %></td>
+<td><%= card.num %></td>
+<td><%= card.limit %></td>
+<td><%= card.sdate %></td>
+<td><%= card.pddate %></td>
+<td><%= card.remark %></td>
+<td>
+	<%= link_to "edit", edit_card_path(card) %>
+</td>
+<td>
+	<%= link_to "delete", card, method: :delete, data:{confirm:"You sure ?"} %>
+</td>
+</tr>
