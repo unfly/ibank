@@ -17,6 +17,19 @@ def update
 	end
 end
 #
+def new
+	@card = Card.new
+end
+#
+def create
+	@card = Card.new(card_params)
+	if @card.save
+		redirect_to cards_url
+	else
+		render new
+	end
+end
+#
 private
 	def card_params
 		params.require(:card).permit(:name, :num, :limit, :sdate, :pddate, :remark)
