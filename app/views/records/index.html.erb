@@ -1,0 +1,11 @@
+<h1>records</h1>
+<%= link_to "new record", new_record_path %>
+<br>
+<table>
+	<tr>
+		<th>bank</th>
+		<th>money</th>
+		<th>descript</th>
+	</tr>
+	<%= render @records %>
+</table>

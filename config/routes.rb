@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
+  # get 'records/new'
+
   # get 'pages/home'
 
   # root
   root 'pages#home'
   # card
   resources :cards
-
+  # record
+  resources :records
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

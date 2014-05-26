@@ -1,0 +1,9 @@
+<%= form_for(@record) do |f| %>
+<%= f.label :card_id %>
+<%= f.select :card_id, Card.all.collect{|p| [p.name, p.id]} %><br>
+<%= f.label :money %>
+<%= f.number_field :money %><br>
+<%= f.label :description %>
+<%= f.text_area :description %><br>
+<%= f.submit %>
+<% end %>
