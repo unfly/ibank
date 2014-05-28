@@ -9,7 +9,7 @@ class RecordsController < ApplicationController
                 flash[:success] = "create success"
   		redirect_to records_url	
   	else
-  		render new
+  		render 'new'
   	end
   end
 

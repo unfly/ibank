@@ -1,0 +1,7 @@
+<div>
+	<% if Rails.env.development? %>
+	<%= debug(params) %><br>
+	<p>********************************</p>
+	<%= debug(flash) %>
+	<% end %>
+</div>

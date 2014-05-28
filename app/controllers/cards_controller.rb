@@ -14,7 +14,7 @@ def update
 		flash[:success] = "update success"
 		redirect_to cards_url
 	else
-		render edit
+		render 'edit'
 	end
 end
 #
@@ -28,7 +28,7 @@ def create
 		flash[:success] = "create success"
 		redirect_to cards_url
 	else
-		render new
+		render 'new'
 	end
 end
 #
