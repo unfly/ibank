@@ -4,15 +4,15 @@
 <%= render 'shared/error', object: f.object %>
 <div class="form-group">
 <%= f.label :name, class: "sr-only" %>
-<%= f.text_field :name, class: "form-control", placeholder: "银行名" %>
+<%= f.text_field :name, class: "form-control", placeholder: "银行名称" %>
 </div>
 <div class="form-group">
 <%= f.label :num, class: "sr-only"  %>
-<%= f.text_field :num, class: "form-control" , placeholder: "卡号"%>
+<%= f.text_field :num, class: "form-control" , placeholder: "卡号后四位"%>
 </div>
 <div class="form-group">
 <%= f.label :limit , class: "sr-only" %>
-<%= f.text_field :limit , class: "form-control", placeholder: "额度"%>
+<%= f.text_field :limit , class: "form-control", placeholder: "信用额度"%>
 </div>
 <div class="form-group">
 <%= f.label :sdate, class: "sr-only"  %>

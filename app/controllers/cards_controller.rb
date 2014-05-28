@@ -32,6 +32,11 @@ def create
 	end
 end
 #
+def destroy
+	Card.destroy(params[:id])
+	redirect_to cards_url
+end
+#
 private
 	def card_params
 		params.require(:card).permit(:name, :num, :limit, :sdate, :pddate, :remark)

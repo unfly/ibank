@@ -1,15 +1,15 @@
 <p>
-<%= link_to "new card", new_card_path %>
+<%= link_to "新建银行卡", new_card_path, class:"btn btn-primary btn-lg" %>
 </p>
 <%= will_paginate %>
 <table class="table">
 	<tr>
-		<td>bank name</td>
-		<td>card num</td>
-		<td>credit limit</td>
-		<td>statment date</td>
-		<td>payment due date</td>
-		<td>remark</td>
+		<td>银行</td>
+		<td>卡号</td>
+		<td>信用额度</td>
+		<td>账单日</td>
+		<td>还款日</td>
+		<td>备注</td>
 	</tr>
 	
 	<%= render @cards %>

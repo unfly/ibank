@@ -6,9 +6,9 @@
 <td><%= card.pddate %></td>
 <td><%= card.remark %></td>
 <td>
-	<%= link_to "edit", edit_card_path(card) %>
+	<%= link_to "编辑", edit_card_path(card) %>
 </td>
 <td>
-	<%= link_to "delete", card, method: :delete, data:{confirm:"You sure ?"} %>
+	<%= link_to "删除", card, method: :delete, data:{confirm:"你确定要删除这张卡 ?"} %>
 </td>
 </tr>
