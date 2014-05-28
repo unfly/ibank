@@ -6,6 +6,7 @@ class RecordsController < ApplicationController
   def create
   	@record = Record.new(record_params)
   	if @record.save
+                flash[:success] = "create success"
   		redirect_to records_url	
   	else
   		render new

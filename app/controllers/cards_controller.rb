@@ -11,6 +11,7 @@ end
 def update
 	@card = Card.find(params[:id])
 	if @card.update_attributes(card_params)
+		flash[:success] = "update success"
 		redirect_to cards_url
 	else
 		render edit
@@ -24,6 +25,7 @@ end
 def create
 	@card = Card.new(card_params)
 	if @card.save
+		flash[:success] = "create success"
 		redirect_to cards_url
 	else
 		render new
