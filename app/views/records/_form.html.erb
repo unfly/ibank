@@ -2,7 +2,7 @@
 <%= render 'shared/error', object: f.object %>
 <div class="form-group">
 <%= f.label :card_id, "银行卡" %>
-<%= f.select :card_id, Card.all.collect{|p| [(p.name.to_s+"-"+p.num.to_s), p.id]}, class:"form-control" %>
+<%= f.select :card_id, Card.all.collect{|p| [(p.name.to_s+"-"+p.num.to_s), p.id]} %>
 </div>
 <div class="form-group">
 <%= f.label :money, "发生额" %>

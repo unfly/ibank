@@ -1,12 +1,18 @@
 @import "bootstrap";
-
+$black: #000000;
+$blue: #0094ea;
 #logo {
 	font-size: 5em;
 
 }
 
-@media screen and (max-with: 980px) {
+@media (max-width: 980px) {
+
 	body{
-	font-size: 5em;
+	#logo {
+		font-size: 2em;
 	}
+	font-size: 2em;
+	}
+
 }

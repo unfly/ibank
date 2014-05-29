@@ -2,7 +2,7 @@
 <%= link_to "新建银行卡", new_card_path, class:"btn btn-primary btn-lg" %>
 </p>
 <%= will_paginate %>
-<table class="table">
+<table class="table table-hover">
 	<tr>
 		<td>银行</td>
 		<td>卡号</td>
@@ -10,6 +10,8 @@
 		<td>账单日</td>
 		<td>还款日</td>
 		<td>备注</td>
+		<td></td>
+		<td></td>
 	</tr>
 	
 	<%= render @cards %>
